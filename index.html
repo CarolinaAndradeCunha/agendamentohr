@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Studio Glam</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="hero">
+    <h1>Studio Glam</h1>
+    <p>Elegância em cada detalhe</p>
+    <nav>
+      <a href="#galeria">Galeria</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#agendamento">Agendamento</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section id="galeria" class="secao">
+    <h2>Galeria de Resultados</h2>
+    <div class="filtros">
+      <button onclick="filtrar('todos')">Todos</button>
+      <button onclick="filtrar('unhas')">Unhas</button>
+      <button onclick="filtrar('cabelo')">Cabelo</button>
+      <button onclick="filtrar('depilacao')">Depilação</button>
+    </div>
+    <div class="galeria">
+      <!-- Exemplo de item -->
+      <div class="foto unhas"><img src="img/unha1.jpg" alt="Unha simples"></div>
+      <div class="foto unhas"><img src="img/unha2.jpg" alt="Banho de gel"></div>
+      <div class="foto cabelo"><img src="img/cabelo1.jpg" alt="Corte de cabelo"></div>
+      <div class="foto depilacao"><img src="img/depilacao1.jpg" alt="Depilação de buço"></div>
+      <!-- Adicione mais -->
+    </div>
+  </section>
+
+  <section id="servicos" class="secao">
+    <h2>Serviços</h2>
+    <div class="cards-servicos">
+      <!-- Unhas -->
+      <div class="card">
+        <h3>Unha Simples</h3>
+        <p>Limpeza e esmaltação básica.</p>
+        <p><strong>Duração:</strong> 30min</p>
+        <p><strong>Valor:</strong> R$ 25,00</p>
+      </div>
+      <div class="card">
+        <h3>Alongamento</h3>
+        <p>Unhas alongadas com acabamento profissional.</p>
+        <p><strong>Duração:</strong> 1h30</p>
+        <p><strong>Valor:</strong> R$ 80,00</p>
+      </div>
+      <!-- Cabelo -->
+      <div class="card">
+        <h3>Corte Feminino</h3>
+        <p>Corte moderno e sob medida.</p>
+        <p><strong>Duração:</strong> 40min</p>
+        <p><strong>Valor:</strong> R$ 35,00</p>
+      </div>
+      <div class="card">
+        <h3>Pintura</h3>
+        <p>Coloração total ou parcial com produtos de qualidade.</p>
+        <p><strong>Duração:</strong> 2h</p>
+        <p><strong>Valor:</strong> R$ 90,00</p>
+      </div>
+      <!-- Depilação -->
+      <div class="card">
+        <h3>Buço</h3>
+        <p>Remoção delicada e eficaz do buço.</p>
+        <p><strong>Duração:</strong> 15min</p>
+        <p><strong>Valor:</strong> R$ 10,00</p>
+      </div>
+      <div class="card">
+        <h3>Virilha Total</h3>
+        <p>Depilação completa com cera morna.</p>
+        <p><strong>Duração:</strong> 30min</p>
+        <p><strong>Valor:</strong> R$ 35,00</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="agendamento" class="secao">
+    <h2>Agende seu Horário</h2>
+    <form id="form-agendamento">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" required />
+
+      <label for="categoria">Categoria:</label>
+      <select id="categoria" required>
+        <option value="">Selecione</option>
+        <option value="unhas">Unhas</option>
+        <option value="cabelo">Cabelo</option>
+        <option value="depilacao">Depilação</option>
+      </select>
+
+      <label for="servico">Serviço:</label>
+      <input type="text" id="servico" required />
+
+      <label for="data">Data:</label>
+      <input type="date" id="data" required />
+
+      <label for="hora">Hora:</label>
+      <input type="time" id="hora" required />
+
+      <button type="submit">Agendar</button>
+    </form>
+
+    <a id="linkAgenda" class="btn-agenda" target="_blank">Adicionar ao Google Agenda</a>
+  </section>
+
+  <section id="contato" class="secao">
+    <h2>Contato</h2>
+    <p>WhatsApp: <a href="https://wa.me/SEUNUMERO" target="_blank">Agendar via WhatsApp</a></p>
+    <p>Instagram: <a href="https://instagram.com/studioglam" target="_blank">@studioglam</a></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
