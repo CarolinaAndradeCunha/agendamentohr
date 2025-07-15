@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Confirmação do Agendamento</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="confirmacao.css" />
+</head>
+<body>
+  <h1>Confirmação do Agendamento</h1>
+
+  <div class="servicos-selecionados" id="lista-servicos">
+    <!-- Serviços selecionados vão aparecer aqui -->
+  </div>
+
+  <form id="form-agendamento">
+    <label for="data">Escolha o dia</label>
+    <input type="date" id="data" name="data" required />
+
+    <label for="hora">Escolha o horário</label>
+    <input type="time" id="hora" name="hora" required />
+
+    <label for="pagamento">Forma de pagamento</label>
+    <select id="pagamento" name="pagamento" required>
+      <option value="">Selecione...</option>
+      <option value="cartao">Cartão</option>
+      <option value="pix">Pix</option>
+      <option value="dinheiro">Dinheiro</option>
+    </select>
+
+    <button type="submit">Confirmar Agendamento</button>
+  </form>
+
+  <script src="confirmacao.js"></script>
+</body>
+</html>
